@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 80%;
+}
+
+.input-seccion {
+    flex: 1;
+    padding: 10px;
+    overflow: auto;
+    background-color: rgb(224, 165, 83);
+}
+
+.tabla-seccion{
+    flex: 1;
+    padding: 10px;
+    overflow: auto;
+}
+
+
+input[type="file"], button, input[type="number"], input[type="text"] {
+    margin-bottom: 10px;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}

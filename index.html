@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacción con Excel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="input-seccion">
+            <h1>Interacción con Excel</h1>
+            <input type="file" id="fileInput" accept=".xlsx, .xls" />
+            <button onclick="añadirFila()">Añadir Fila</button>
+            <div>
+                <label>Fila: <input type="number" id="filaInput" /></label>
+                <label>Columna: <input type="text" id="columnaInput" /></label>
+                <label>Valor: <input type="text" id="valorInput" /></label>
+                <button onclick="modificarFila()">Modificar Fila</button>
+                <button onclick="borrarFila()">Borrar Fila</button>
+            </div>
+        </div>
+        <div class="tabla-seccion">
+            <div id="tablaDatos"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
